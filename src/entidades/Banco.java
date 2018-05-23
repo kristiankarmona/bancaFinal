@@ -8,6 +8,7 @@ import java.lang.Math;
 
 public class Banco extends Thread {
 	
+	private static long capitalInicial;
 	private static long capital;
 	private static long saldoPorCobrar;
 	private static long perdidas;
@@ -25,6 +26,7 @@ public class Banco extends Thread {
 	public static Banco instanciarSoloUnaVezBanco(long capital,long saldoPorCobrar, long perdida) {
 		if(banco==null) {
 			banco=new Banco(capital,saldoPorCobrar, perdida);
+			banco.capitalInicial=capital;
 		}else{
             System.out.println("No se puede crear el objeto Banco porque ya existe un objeto de esta clase");
         }
@@ -119,4 +121,13 @@ public class Banco extends Thread {
 	public static Banco getBanco() {
 		return banco;
 	}
+
+	public static long getCapitalInicial() {
+		return capitalInicial;
+	}
+
+	public static void setCapitalInicial(long capitalInicial) {
+		Banco.capitalInicial = capitalInicial;
+	}
+	
 }

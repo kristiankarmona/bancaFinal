@@ -46,6 +46,12 @@
 			</tr>
 
 			<tr>
+				<td><label for="Capital Incial">Capital Inicial</label></td>
+				<td><input type="number" name="capitalInicial"
+					value="${requestScope['capitalInicial']}" readonly></td>
+			</tr>
+
+			<tr>
 				<td><label for="capital">Capital</label></td>
 				<td><input type="number" name="capital"
 					value="${requestScope['capital']}" readonly></td>
@@ -82,7 +88,7 @@
 
 
 
-		<h1>Creditos Activos:</h1>
+		<h1  class="titulo1">Creditos Activos:</h1>
 		<table align="center" class="tablebonita">
 			<thead>
 				<tr>
@@ -103,8 +109,10 @@
 					</tr>
 				</c:forEach>
 		</table>
+		<br>
+		<br>		
 		
-		<h1>Creditos Finalizados:</h1>
+		<h1 class="titulo1">Creditos Finalizados:</h1>
 		<table align="center" class="tablebonita">
 			<thead>
 				<tr>
@@ -124,8 +132,10 @@
 						<td>${credito.getCuota()}</td>
 					</tr>
 				</c:forEach>
-		</table>		
-		<h1>Creditos Castigados:</h1>
+		</table>
+		<br>
+		<br>		
+		<h1 class="titulo1">Creditos Castigados:</h1>
 		<table align="center" class="tablebonita">
 			<thead>
 				<tr>

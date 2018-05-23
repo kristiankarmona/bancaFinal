@@ -54,3 +54,7 @@ table.tablebonita td, table.tablebonita th {
 table.tablebonita tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+h1.titulo1 {
+	font-size:18px; 
+	color: #A93226; }

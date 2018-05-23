@@ -40,6 +40,7 @@ public class EstadoCuentaServlet extends HttpServlet {
 		
 		GestionarCredito gestionCredito = new GestionarCredito();
 		request.setAttribute("capital", Banco.getBanco().getCapital());
+		request.setAttribute("capitalInicial", Banco.getBanco().getCapitalInicial());
 		request.setAttribute("saldoPorCobrar", Banco.getBanco().getSaldoPorCobrar());
 		request.setAttribute("perdidas", Banco.getBanco().getPerdidas());
 		

@@ -32,7 +32,7 @@ public class CreditoLibreInversion extends Credito {
 		//18946992.60 para plazo 8 y para tasa 1.8 con monto 140.000.000
 
 		double operandoA = this.getTasaMensual() * (Math.pow((1 + this.getTasaMensual()), this.getPlazoMeses()));
-		double operandoB = (Math.pow((1 + this.getTasaMensual()), this.getPlazoMeses()) - 1);
+		double operandoB = ((Math.pow((1 + this.getTasaMensual()), this.getPlazoMeses())) - 1);
 
 		this.cuota = (long) (montoSolicitado * (operandoA / operandoB));
 		this.cuota = 100000;
